@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no"> -->
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>CITIZENS</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background: black,">
+        <a class="navbar-brand" href="#">CITIZENS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#report">Report</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categories
+                  </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">All Incidents</a>
+                        <a class="dropdown-item" href="#" id="accident">Accidents</a>
+                        <a class="dropdown-item" href="#" id="fight">Fights</a>
+                        <a class="dropdown-item" href="#" id="rape">Rape</a>
+                        <a class="dropdown-item" href="#" id="flood">Flood</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="jumbotron" id="jumbo">
+            <h1 class="display-4" id="heading">CITIZEN</h1>
+            <p class="lead"></p>
+            <hr class="my-4">
+            <p>A citizen supporting program that ease access for help. </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                POSTS
+            </div>
+        </div>
+
+        <div class="row" id="get-post">
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="text-align: center">Report Incident</h1>
+
+                <div>
+                    <form id="report">
+                        <div class="form-row">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input type="text" class="form-control" placeholder="Please input your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control" id="title" placeholder="Title of Incident">
+                            <p>E.g: Accident by Deeper Life Church Gbagada</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea class="form-control" id="description" rows="6" placeholder="Description of Incident"></textarea>
+                        </div>
+
+                        <div class="form-group">
+
+                            <img id="myImage"></img>
+                            <label for="image">Select Image</label>
+                            <input id="upload" type="file" name="image" class="form-control" />
+
+
+                        </div>
+
+                        <div class="form-group">
+                            <p class="btn btn-dark" id="btn">Take a Picture</p>
+                            <p class="btn btn-dark" id="upload">Upload Picture</p>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">Category</label>
+                                <select id="inputState" class="form-control selectcat">
+                                              <option value=2>Accident</option>
+                                              <option value=3>Fight</option>
+                                              <option value=6>Rape</option>
+                                              <option value=5>Flood</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="btn btn-dark" id="getPosition">Add Location</p>
+                        </div>
+
+
+
+                        <button type="submit" class="btn btn-primary" id="submit">Report</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>

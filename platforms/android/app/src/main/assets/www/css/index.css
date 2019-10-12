@@ -1,0 +1,26 @@
+body {
+    background: gray;
+    color: white;
+}
+
+#jumbo {
+    text-align: center;
+    background: #353D42;
+    color: white;
+    margin-top: 3%;
+}
+
+#heading {
+    font-size: 3em;
+    font-weight: bold;
+    width: 100%;
+}
+
+#color {
+    background: black;
+    color: white;
+}
+
+.float {
+    float: left;
+}

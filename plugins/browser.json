@@ -1,0 +1,24 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "mytest"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "mytest"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.mytest.www"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.mytest.www"
+    }
+  },
+  "dependent_plugins": {}
+}
